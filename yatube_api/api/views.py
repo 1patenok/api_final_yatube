@@ -49,7 +49,7 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
 class FollowViewSet(
     mixins.ListModelMixin,
     mixins.CreateModelMixin,
-    viewsets.GenericViewSet
+    viewsets.GenericViewSe
 ):
     serializer_class = FollowSerializer
     filter_backends = (filters.SearchFilter, )
@@ -57,6 +57,6 @@ class FollowViewSet(
 
     def get_queryset(self):
         return Follow.objects.filter(user=self.request.user)
-    
+
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)

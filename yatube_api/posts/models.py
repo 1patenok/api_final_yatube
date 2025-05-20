@@ -26,7 +26,7 @@ class Post(models.Model):
     )
 
     def __str__(self):
-        return self.text
+        return self.tex
 
 
 class Comment(models.Model):
@@ -61,4 +61,3 @@ class Follow(models.Model):
 
     def __str__(self):
         return self.user
-    

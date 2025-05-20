@@ -3,7 +3,7 @@ from .models import (
     Post,
     Group,
     Follow,
-    Comment
+    Commen
 )
 
 

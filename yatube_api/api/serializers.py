@@ -15,7 +15,7 @@ class PostSerializer(serializers.ModelSerializer):
 
     class Meta:
         fields = '__all__'
-        model = Post
+        model = Pos
 
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -26,7 +26,7 @@ class CommentSerializer(serializers.ModelSerializer):
 
     class Meta:
         fields = '__all__'
-        model = Comment
+        model = Commen
         read_only_fields = ('post',)
 
 

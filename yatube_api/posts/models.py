@@ -26,7 +26,7 @@ class Post(models.Model):
     )
 
     def __str__(self):
-        return self.tex
+        return self.text
 
 
 class Comment(models.Model):
